@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recruitment - RF1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Tryout Registration</h1>
+        <p class="subtitle">Make sure you have already joined our Discord server!</p>
+        
+        <!-- Connected to Formspree for email delivery -->
+        <form action="https://formspree.io/f/mgaojaoy" method="POST">
+            
+            <div class="input-group">
+                <label for="roblox">Roblox Username</label>
+                <input type="text" id="roblox" name="Roblox Username" placeholder="e.g., RivalPlayer99" required>
+            </div>
+
+            <div class="input-group">
+                <label for="discord">Discord Username</label>
+                <input type="text" id="discord" name="Discord Username" placeholder="e.g., my_discord_username" required>
+            </div>
+
+            <div class="input-group">
+                <label for="date">Test Date</label>
+                <input type="date" id="date" name="Test Date" required>
+            </div>
+
+            <div class="input-group">
+                <label for="time">Time Slot</label>
+                <select id="time" name="Time Slot" required>
+                    <option value="" disabled selected>Select a time</option>
+                    <option value="14:00 - 15:00">14:00 - 15:00</option>
+                    <option value="15:00 - 16:00">15:00 - 16:00</option>
+                    <option value="16:00 - 17:00">16:00 - 17:00</option>
+                    <option value="18:00 - 19:00">18:00 - 19:00</option>
+                    <option value="20:00 - 21:00">20:00 - 21:00</option>
+                </select>
+            </div>
+
+            <button type="submit">Book My Tryout</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
