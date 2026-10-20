@@ -3,26 +3,157 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Application Received! - Rivals Clan</title>
+    <title>Application Received! - RF1</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Modernized Cyberpunk E-sports Look for Success Page */
+        .success-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: radial-gradient(circle at center, #141829 0%, #0b0d17 100%);
+            padding: 20px;
+        }
+
+        .success-card {
+            background-color: #111424;
+            padding: 50px 40px;
+            border-radius: 16px;
+            text-align: center;
+            max-width: 550px;
+            width: 100%;
+            border: 2px solid #ff4757; /* Matches RF1 Red theme */
+            box-shadow: 0 0 30px rgba(255, 71, 87, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Animated Glowing Target Icon instead of a generic tick */
+        .success-badge {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 25px auto;
+            background: rgba(255, 71, 87, 0.1);
+            border: 2px dashed #ff4757;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            color: #ff4757;
+            font-weight: 900;
+            box-shadow: 0 0 15px rgba(255, 71, 87, 0.3);
+            animation: spinTarget 10s linear infinite;
+        }
+
+        @keyframes spinTarget {
+            100% { transform: rotate(300deg); }
+        }
+
+        .success-card h1 {
+            font-size: 2.2rem;
+            font-weight: 800;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .success-card h1 span {
+            color: #ff4757;
+        }
+
+        .success-card p {
+            color: #a4b0be;
+            font-size: 1.05rem;
+            margin-bottom: 35px;
+        }
+
+        /* Clean Tactical Next Steps Card */
+        .next-steps {
+            background-color: #0b0d17;
+            padding: 25px;
+            border-radius: 10px;
+            text-align: left;
+            margin-bottom: 35px;
+            border-left: 4px solid #ff4757;
+        }
+
+        .next-steps h4 {
+            color: #ffffff;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .next-steps ul {
+            list-style: none;
+            color: #dcdde1;
+            font-size: 0.95rem;
+        }
+
+        .next-steps li {
+            margin-bottom: 12px;
+            position: relative;
+            padding-left: 20px;
+        }
+
+        /* Custom list markers */
+        .next-steps li::before {
+            content: "»";
+            position: absolute;
+            left: 0;
+            color: #ff4757;
+            font-weight: bold;
+        }
+
+        .next-steps strong {
+            color: #ff4757;
+        }
+
+        /* Sleek Button */
+        .back-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #ff4757 0%, #ff6b81 100%);
+            color: white;
+            text-decoration: none;
+            padding: 14px 40px;
+            border-radius: 6px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.95rem;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 4px 15px rgba(255, 71, 87, 0.4);
+        }
+
+        .back-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 71, 87, 0.6);
+        }
+    </style>
 </head>
 <body>
     <div class="success-wrapper">
         <div class="success-card">
-            <div class="success-icon">✓</div>
-            <h1>Application Secured!</h1>
-            <p>Your tryout request has been successfully submitted and delivered to our management team.</p>
+            <!-- Animated competitive crosshair badge -->
+            <div class="success-badge">RF1</div>
+            
+            <h1>Transmission <span>Secured</span></h1>
+            <p>Your application packet has been registered by management.</p>
             
             <div class="next-steps">
-                <h4>What happens next?</h4>
+                <h4>Next Objectives</h4>
                 <ul>
-                    <li>An officer will ping or DM you on Discord.</li>
-                    <li>Keep your eyes on the <strong>#tryouts-schedule</strong> channel.</li>
-                    <li>Be online on Roblox during your chosen time slot.</li>
+                    <li>An officer will track you down on <strong>Discord</strong>.</li>
+                    <li>Monitor the <strong>#tryouts-schedule</strong> channel inside the server.</li>
+                    <li>Ensure you are warmed up and active in-game during your slot.</li>
                 </ul>
             </div>
 
-            <a href="index.html" class="back-btn">Return Home</a>
+            <a href="index.html" class="back-btn">Return To HQ</a>
         </div>
     </div>
 </body>
