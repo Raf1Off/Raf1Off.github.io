@@ -1,4 +1,6 @@
-// Block selection of past dates
+// Automatically prevent picking past days for tryouts
 const dateInput = document.getElementById('date');
-const today = new Date().toISOString().split('T')[0];
-dateInput.setAttribute('min', today);
+if(dateInput) {
+    const today = new Date().toISOString().split('T')[0];
+    dateInput.setAttribute('min', today);
+}
