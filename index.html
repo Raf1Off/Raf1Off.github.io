@@ -3,47 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recruitment - RF1</title>
+    <title>Roblox Rivals - Clan Recruitment</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="form-container">
-        <h1>Tryout Registration</h1>
-        <p class="subtitle">Make sure you have already joined our Discord server!</p>
-        
-        <!-- Connected to Formspree for email delivery -->
-        <form action="https://formspree.io/f/mgaojaoy" method="POST">
+
+    <!-- HEADER / NAVIGATION -->
+    <header class="main-header">
+        <div class="logo">RIVALS<span>CLAN</span></div>
+        <nav class="nav-links">
+            <a href="#how-it-works">How It Works</a>
+            <a href="#apply-form">Apply Now</a>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION (EXPLANATIONS) -->
+    <section class="hero-section" id="how-it-works">
+        <div class="hero-content">
+            <h1>Join The Ultimate <span>Roblox Rivals</span> Roster</h1>
+            <p class="hero-desc">Led by a Level 180+ founder, we are looking for competitive, skilled, and dedicated players to dominate the leaderboards.</p>
             
-            <div class="input-group">
-                <label for="roblox">Roblox Username</label>
-                <input type="text" id="roblox" name="Roblox Username" placeholder="e.g., RivalPlayer99" required>
+            <div class="steps-container">
+                <div class="step-card">
+                    <div class="step-num">1</div>
+                    <h3>Join Discord</h3>
+                    <p>Make sure you are already inside our official Discord community server before applying.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-num">2</div>
+                    <h3>Book Tryout</h3>
+                    <p>Fill out the official form below with your exact tags and choose a suitable time slot.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-num">3</div>
+                    <h3>1v1 Duel</h3>
+                    <p>Enter the private arena with our recruiters to test your aim, movements, and game sense.</p>
+                </div>
             </div>
+        </div>
+    </section>
 
-            <div class="input-group">
-                <label for="discord">Discord Username</label>
-                <input type="text" id="discord" name="Discord Username" placeholder="e.g., my_discord_username" required>
-            </div>
+    <!-- FORM SECTION -->
+    <section class="form-section" id="apply-form">
+        <div class="form-container">
+            <h2>Secure Your Tryout</h2>
+            <p class="subtitle">All fields are monitored and encrypted.</p>
+            
+            <form action="https://formspree.io" method="POST">
+                
+                <!-- Redirect to success page after submission -->
+                <input type="hidden" name="_next" value="https://YOUR_GITHUB_USERNAME.github.io/YOUR_REPO_NAME/success.html">
+                
+                <div class="input-group">
+                    <label for="roblox">Roblox Username</label>
+                    <input type="text" id="roblox" name="Roblox Username" placeholder="e.g., RivalPlayer99" required>
+                </div>
 
-            <div class="input-group">
-                <label for="date">Test Date</label>
-                <input type="date" id="date" name="Test Date" required>
-            </div>
+                <div class="input-group">
+                    <label for="discord">Discord Username</label>
+                    <input type="text" id="discord" name="Discord Username" placeholder="e.g., username_v2" required>
+                </div>
 
-            <div class="input-group">
-                <label for="time">Time Slot</label>
-                <select id="time" name="Time Slot" required>
-                    <option value="" disabled selected>Select a time</option>
-                    <option value="14:00 - 15:00">14:00 - 15:00</option>
-                    <option value="15:00 - 16:00">15:00 - 16:00</option>
-                    <option value="16:00 - 17:00">16:00 - 17:00</option>
-                    <option value="18:00 - 19:00">18:00 - 19:00</option>
-                    <option value="20:00 - 21:00">20:00 - 21:00</option>
-                </select>
-            </div>
+                <div class="input-row">
+                    <div class="input-group">
+                        <label for="date">Test Date</label>
+                        <input type="date" id="date" name="Test Date" required>
+                    </div>
 
-            <button type="submit">Book My Tryout</button>
-        </form>
-    </div>
+                    <div class="input-group">
+                        <label for="time">Time Slot (GMT)</label>
+                        <select id="time" name="Time Slot" required>
+                            <option value="" disabled selected>Select time</option>
+                            <option value="14:00 - 15:00">14:00 - 15:00</option>
+                            <option value="15:00 - 16:00">15:00 - 16:00</option>
+                            <option value="16:00 - 17:00">16:00 - 17:00</option>
+                            <option value="18:00 - 19:00">18:00 - 19:00</option>
+                            <option value="20:00 - 21:00">20:00 - 21:00</option>
+                        </select>
+                    </div>
+                </div>
+
+                <button type="submit" class="submit-btn">Submit Application</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="main-footer">
+        <p>&copy; 2026 RivalsClan E-Sports. All Rights Reserved. Not affiliated with Roblox Corporation.</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
