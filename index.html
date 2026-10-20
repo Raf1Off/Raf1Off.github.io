@@ -49,10 +49,17 @@
             <h2>Secure Your Tryout</h2>
             <p class="subtitle">All fields are monitored and encrypted.</p>
             
-            <form action="https://formspree.io/f/mgaojaoy" method="POST">
+            <!-- FORM CONNECTED TO WEB3FORMS -->
+            <form action="https://api.web3forms.com/submit" method="POST">
                 
-                <input type="hidden" name="_next" value="https://Raf1Off.github.io/success.html">
+                <!-- Web3Forms Access Key activated -->
+                <input type="hidden" name="access_key" value="a7346110-675b-45d4-b980-ed89ae3de373">
                 
+                <!-- ATTENTION : Remplace bien cette URL par le vrai lien en ligne de ton success.html -->
+                <input type="hidden" name="redirect" value="https://raf1off.github.io/success.html">
+                
+                <input type="hidden" name="subject" value="New RF1 Tryout Application!">
+
                 <div class="input-group">
                     <label for="roblox">Roblox Username</label>
                     <input type="text" id="roblox" name="Roblox Username" placeholder="e.g., RivalPlayer99" required>
@@ -89,7 +96,7 @@
 
     <!-- FOOTER -->
     <footer class="main-footer">
-        <p>&copy; 2026 RF1 E-Sports. All Rights Reserved. Not affiliated with Roblox Corporation.</p>
+        <p>&copy; 2026 RAF1. All Rights Reserved. Not affiliated with Roblox Corporation.</p>
     </footer>
 
     <script src="script.js"></script>
